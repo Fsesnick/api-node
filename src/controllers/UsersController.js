@@ -1,6 +1,4 @@
 // classe permite que tenha varias funções dentro delas
-
-class UsersController{
 /**
  * index - GET para listar vários registros
  * show - GET para exibir um registro específico
@@ -8,6 +6,14 @@ class UsersController{
  * update - PUT para atualizar um registro
  * delete - DELETE para remover um registro
  */
+
+class UsersController{
+
+create(request, response){
+        const { name,email,password } = request.body
+        //response.json(`Usuario: ${name}, email: ${email}`)
+        response.json({ name,email,password})
+        }
 }
 
 module.exports = UsersController;
