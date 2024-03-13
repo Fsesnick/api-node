@@ -4,7 +4,7 @@ App backend que utiliza express para gerenciar rotas
 >> npm start
 
 
-#Curl pra testes 
+# Curl pra testes 
 
 curl --location 'localhost:3333/users' \
 --header 'Content-Type: application/json' \
